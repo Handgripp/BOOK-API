@@ -1,5 +1,7 @@
+
 <form method="post" action="{% url 'book_create' %}">
   {% csrf_token %}
   {{ form.as_p }}
   <button type="submit" >Add a book</button>
 </form>
+<a href="{% url 'book_list' %}">Back</a>
